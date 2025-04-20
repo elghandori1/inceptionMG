@@ -8,15 +8,15 @@
 
 ----- Mandatory WordPress
 
-    + To view the WordPress page, enter the URL: `http://localhost`
-    + To log in to the WordPress admin dashboard using credentials from your `.env` file, enter: `http://localhost/wp-login.php` and input the admin or user login and password from the `.env` file.
+    + To view the WordPress page, enter the URL: `https://localhost`
+    + To log in to the WordPress admin dashboard using credentials from your `.env` file, enter: `https://localhost/wp-login.php` and input the admin or user login and password from the `.env` file.
 
     + To log in to the MariaDB container, use the command: `docker exec -it mariadb mariadb -u <wordpress_db_user> -p<wordpress_db_password> wordpress` (Replace `<wordpress_db_user>` and `<wordpress_db_password>` with the values from your `.env` file).
     Verify that it's not empty by running: `SHOW TABLES;`
 
 ----- Redis Cache for WordPress
 
-    + Access your WordPress admin dashboard: `http://localhost/wp-login.php`
+    + Access your WordPress admin dashboard: `https://localhost/wp-login.php`
     Navigate to the installed Redis Object Cache plugin. You should see a status page indicating that Redis is connected and working.
     + You can also check if Redis is running by executing this command: `docker exec -it redis redis-cli ping`. It should respond with "PONG" if Redis is running.
 
