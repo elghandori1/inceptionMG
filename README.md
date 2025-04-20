@@ -6,6 +6,7 @@
 - Run with the Makefile using the command: `make` or `make up`
 
 ----- Mandatory WordPress
+
     + To view the WordPress page, enter the URL: `http://localhost`
     + To log in to the WordPress admin dashboard using credentials from your `.env` file, enter: `http://localhost/wp-login.php` and input the admin or user login and password from the `.env` file.
 
