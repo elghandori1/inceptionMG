@@ -111,7 +111,7 @@ volumes:
     name: wordpress_data
     driver_opts:
       type: none
-      device: /home/moel-gha/data/wordpress
+      device: /home/username/data/wordpress
       o: bind
   
   mariadb_data:
@@ -119,7 +119,7 @@ volumes:
     name: mariadb_data
     driver_opts:
       type: none
-      device: /home/moel-gha/data/mariadb
+      device: /home/username/data/mariadb
       o: bind
   
   portainer_data:
@@ -127,5 +127,5 @@ volumes:
     name: portainer_data
     driver_opts:
       type: none
-      device: /home/moel-gha/data/portainer
+      device: /home/username/data/portainer
       o: bind
